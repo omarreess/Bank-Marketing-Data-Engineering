@@ -5,22 +5,26 @@ Versions:
  - V1: Working with CSV Files 
  - V2: Working with Snowflake
    
+## Repository Structure
 
-🗂️ Project Structure
+```
 Bank-Marketing-Data-Engineering/
 │
-├── 📁 db_tables/ 
-│   ├── bank_marketing.csv               # Raw source data (original import)
-│   ├── CLIENT.csv                       
-│   ├── CAMPAIGN.csv                    
-│   └── ECONOMICS.csv                    
+├── db_tables/
+│   ├── bank_marketing.csv      # Raw source file – original dataset ingested into Snowflake
+│   ├── CLIENT.csv              # Output – cleaned client demographics table
+│   ├── CAMPAIGN.csv            # Output – cleaned campaign interactions table
+│   └── ECONOMICS.csv           # Output – cleaned economic indicators table
 │
-├── 📁 scripts/                           # notebooks
-│   ├── transform_tables_with_Snowflake.ipynb   # Version 2  (Snowflake)
-│   └── transform_tables_with_csv.ipynb         # Version 1  (pandas/CSV)
+├── scripts/
+│   ├── transform_tables_with_Snowflake.ipynb   # Version 2.0 – Snowflake-native ETL pipeline
+│   └── transform_tables_with_csv.ipynb         # Version 1.0 – Legacy CSV-based ETL processing
 │
-├── .gitignore
-└── README.md
+├── .gitignore                 # Git ignore configuration
+└── README.md                 # Project documentation
+```
+
+                            
 
 
 
