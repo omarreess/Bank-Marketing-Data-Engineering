@@ -1,25 +1,27 @@
 # Bank Marketing Data Engineering Project
 Clean, transform, and split Bank Marketing Campaign Data with Python into three structured CSV files:
 
-client.csv - Customer demographic information
-campaign.csv - Marketing campaign interactions
-economics.csv - Economic indicators
+Versions: 
+ - V1: Working with CSV Files 
+ - V2: Working with Snowflake
+   
 
 🗂️ Project Structure
 Bank-Marketing-Data-Engineering/
 │
-├── notebook.ipynb           # Main notebook
-├── bank_marketing.csv       # Source data (raw)
-├── client.csv              # Output: Client demographics
-├── campaign.csv            # Output: Campaign data
-├── economics.csv           # Output: Economic indicators
-└── README.md               # Project documentation
+├── 📁 db_tables/ 
+│   ├── bank_marketing.csv               # Raw source data (original import)
+│   ├── CLIENT.csv                       
+│   ├── CAMPAIGN.csv                    
+│   └── ECONOMICS.csv                    
+│
+├── 📁 scripts/                           # notebooks
+│   ├── transform_tables_with_Snowflake.ipynb   # Version 2  (Snowflake)
+│   └── transform_tables_with_csv.ipynb         # Version 1  (pandas/CSV)
+│
+├── .gitignore
+└── README.md
 
-🔧 Technologies Used
-
-Python 3.x
-Pandas - Data manipulation and transformation
-NumPy - Numerical operations and data type handling
 
 
 🔄 Data Transformations
