@@ -18,7 +18,7 @@ Bank-Marketing-Data-Engineering/
 │
 ├── scripts/
 │   ├── transform_tables_with_Snowflake.ipynb   # Version 2.0 – Snowflake-native ETL pipeline
-│   └── transform_tables_with_csv.ipynb         # Version 1.0 – Legacy CSV-based ETL processing
+│   └── transform_tables_with_csv.ipynb         # Version 1.0 – CSV-based ETL processing
 │
 ├── .gitignore                 # Git ignore configuration
 └── README.md                 # Project documentation
